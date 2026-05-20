@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AMB Call</title>
+
+    <!-- FAVICON -->
+    <link rel="icon"
+    href="{{ url_for('static', filename='images/1.png') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
+<div class="bg-shape shape3"></div>
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <img src="{{ url_for('static', filename='images/auth.png') }}">
+
+        <h1>AMB Call</h1>
+
+    </div>
+
+    <ul>
+
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#system">Urgence</a></li>
+        <li><a href="#accessibility">Accessibilité</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-left">
+
+     
+       <h1>
+    Chaque seconde peut sauver
+    <span>une vie.</span>
+</h1>
+
+        <p>
+            AMB Call est une application intelligente de gestion des urgences médicales.
+            Elle permet de demander rapidement une ambulance,
+            suivre les secours en temps réel,
+            aider les personnes sourdes,
+            accéder aux services médicaux proches
+            et améliorer la rapidité des interventions.
+        </p>
+
+        <div class="hero-buttons">
+
+        <a href="#features" class="btn-red">
+Découvrir l'application
+</a>
+
+            <a href="#system"class="btn-white">
+                Voir les fonctionnalités
+            </a>
+
+        </div>
+
+        <!-- STATS -->
+
+        <div class="stats">
+
+    <div class="stat-box">
+
+        <h2>24/7</h2>
+
+        <p>Urgence disponible</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>+100</h2>
+
+        <p>Demandes SOS</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>-50%</h2>
+
+        <p>Temps réponse</p>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="circle"></div>
+
+        <img src="{{ url_for('static', filename='images/app.jpg') }}">
+
+    </div>
+
+</section>
+<div class="wave-divider">
+
+    <svg viewBox="0 0 1440 120">
+
+        <path fill="#C1121F"
+        d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,53.3C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z">
+
+        </path>
+
+    </svg>
+
+</div>
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+
+    <div class="title">
+
+        <span>FONCTIONNALITÉS PRINCIPALES</span>
+
+        <h1>Une application complète et intelligente</h1>
+
+    </div>
+
+    <div class="cards">
+
+        <!-- CARD 1 -->
+        <div class="card">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <h2>Compte Patient</h2>
+
+            <p>
+                Création de compte avec informations personnelles et médicales.
+            </p>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h2>Dossier Médical</h2>
+
+            <p>
+                Allergies, groupe sanguin, médicaments et contacts d'urgence.
+            </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+
+            <i class="fa-solid fa-truck-medical"></i>
+
+            <h2>SOS Rapide</h2>
+
+            <p>
+                Création rapide d'une urgence avec calcul intelligent de priorité.
+            </p>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h2>Suivi Temps Réel</h2>
+
+            <p>
+                Suivi en direct de l’ambulance et du patient.
+            </p>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card">
+
+            <i class="fa-solid fa-ear-listen"></i>
+
+            <h2>Mode Sourd</h2>
+
+            <p>
+                Assistance spéciale pour personnes malentendantes.
+            </p>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card">
+
+            <i class="fa-solid fa-microphone"></i>
+
+            <h2>Aide Vocale</h2>
+
+            <p>
+                Guide vocal intelligent pendant les urgences.
+            </p>
+
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card">
+
+            <i class="fa-solid fa-user-group"></i>
+
+            <h2>Aider un Proche</h2>
+
+            <p>
+                Envoyer une demande d'urgence pour une autre personne.
+            </p>
+
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <h2>Services Proches</h2>
+
+            <p>
+                Hôpitaux, cliniques, pharmacies et médecins à proximité.
+            </p>
+
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="card">
+
+            <i class="fa-solid fa-weight-scale"></i>
+
+            <h2>IMC & Santé</h2>
+
+            <p>
+                Calcul de l’IMC et gestion des informations médicales.
+            </p>
+
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="card">
+
+            <i class="fa-solid fa-phone-volume"></i>
+
+            <h2>Appel d'Urgence</h2>
+
+            <p>
+                Appel rapide vers la police, le SAMU et la protection civile.
+            </p>
+
+        </div>
+
+        <!-- CARD 11 -->
+        <div class="card">
+
+            <i class="fa-solid fa-kit-medical"></i>
+
+            <h2>Premiers Secours</h2>
+
+            <p>
+                Conseils de premiers secours et vidéos explicatives.
+            </p>
+
+        </div>
+
+        <!-- CARD 12 -->
+        <div class="card">
+
+            <i class="fa-solid fa-face-smile"></i>
+
+            <h2>Analyse Émotionnelle</h2>
+
+            <p>
+                Analyse de l’état du patient pour améliorer la priorité SOS.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ACCESSIBILITY ================= -->
+
+<section class="access-section" id="accessibility">
+    <!-- LEFT -->
+    <div class="access-left">
+
+        <span class="section-tag">
+            ACCESSIBILITÉ
+        </span>
+
+        <h1 class="access-title">
+            Une application
+            <span>pensée pour tous</span>
+            les utilisateurs.
+        </h1>
+
+        <p class="access-text">
+            AMB Call intègre des fonctionnalités avancées
+            d’accessibilité : mode contraste,
+            agrandissement du texte, mode lunettes,
+            dark mode, reconnaissance biométrique,
+            SOS par mouvement du téléphone et support multilingue.
+        </p>
+
+        <!-- FEATURES -->
+        <div class="access-features">
+
+            <div class="feature-box">
+                🌙 Dark Mode
+            </div>
+
+            <div class="feature-box">
+                🌍 Multi-langues
+            </div>
+
+            <div class="feature-box">
+                🔐 Biométrie
+            </div>
+
+            <div class="feature-box">
+                📱 SOS Mouvement
+            </div>
+
+            <div class="feature-box">
+                👓 Mode lunettes
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="access-right">
+
+        <img src="{{ url_for('static', filename='images/AMB.png') }}"
+             alt="Ambulance"
+             class="access-image">
+
+    </div>
+
+</section>
+<div class="wave"></div>
+<!-- ================= SYSTEM ================= -->
+
+<section class="system" id="system">
+
+    <div class="title">
+
+        <span>SYSTÈME INTELLIGENT</span>
+
+        <h1>Backend médical intelligent</h1>
+
+    </div>
+
+    <div class="system-grid">
+
+        <div class="system-card">
+            <h2> Dispatch Intelligent</h2>
+            <p>
+                Calcul automatique de la meilleure ambulance.
+            </p>
+        </div>
+
+        <div class="system-card">
+            <h2>📊 Priorité Médicale</h2>
+            <p>
+                Analyse des symptômes et calcul de gravité.
+            </p>
+        </div>
+
+        <div class="system-card">
+            <h2>📍 Géolocalisation</h2>
+            <p>
+                Suivi temps réel du patient et des secours.
+            </p>
+        </div>
+
+        <div class="system-card">
+            <h2>🔔 Notifications</h2>
+            <p>
+                Notifications envoyées automatiquement aux ambulanciers.
+            </p>
+        </div>
+
+        <div class="system-card">
+            <h2>📄 Rapports Ambulance</h2>
+            <p>
+                Gestion des rapports médicaux après intervention.
+            </p>
+        </div>
+
+        <div class="system-card">
+            <h2>🛡️ Admin Dashboard</h2>
+            <p>
+                Gestion des ambulanciers et fiches navettes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+
+        <div class="footer-left">
+
+            <h1>
+                AMB Call
+            </h1>
+
+            <p>
+                Application de gestion
+                des urgences médicales et assistance
+                ambulance en temps réel.
+            </p>
+
+            <!-- VERSION -->
+
+            <div class="footer-version">
+
+                AMB Call v1.0.0
+
+            </div>
+            <!-- TECHNOLOGIES -->
+
+<div class="footer-tech">
+
+    <h3>
+        Technologies utilisées
+    </h3>
+
+    <div class="tech-tags">
+
+        <span>Flutter</span>
+
+        <span>Firebase</span>
+
+        <span>Python</span>
+
+       
+
+    
+
+    </div>
+
+
+
+</div>
+
+        </div>
+
+        <!-- CENTER -->
+
+        <div class="footer-center">
+
+            <h2>
+                Contact
+            </h2>
+
+            <!-- EMAILS -->
+
+            <div class="team-emails">
+
+                <a href="mailto:ambcall.service@gmail.com">
+                    ambcall.service@gmail.com
+                </a>
+
+                <a href="mailto:aminaghergaine4@gmail.com">
+                    aminaghergaine4@gmail.com
+                </a>
+
+                <a href="mailto:arabsoumia9@gmail.com">
+                    arabsoumia9@gmail.com
+                </a>
+
+            </div>
+            
+
+            <!-- DEVELOPERS -->
+
+            <div class="developers">
+
+                <h3>
+                    Développé par
+                </h3>
+
+                <p>Amina Ghergaine</p>
+
+                <p>Arab Soumia</p>
+
+            </div>
+            
+    <!-- SOCIAL -->
+
+    <div class="footer-icons">
+
+        <a href="https://facebook.com" target="_blank">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+        <a href="https://github.com" target="_blank">
+
+            <i class="fa-brands fa-github"></i>
+
+        </a>
+
+    </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="footer-right">
+
+            <h2>
+                Oran, Algérie
+            </h2>
+
+            <!-- MAP -->
+
+            <div class="map-container">
+
+                <iframe
+                src="https://www.google.com/maps?q=Oran,Algeria&output=embed"
+                loading="lazy">
+                </iframe>
+
+            </div>
+
+            <!-- EMERGENCY -->
+
+            <div class="emergency-box">
+
+                <h3>
+                    Numéros d'urgence
+                </h3>
+
+                <p>Samu :14</p>
+
+                <p>Protection Civile : 14</p>
+
+                <p>Police : 1548</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+        © 2026 AMB Call - Tous droits réservés.
+
+    </div>
+
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

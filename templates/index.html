@@ -77,10 +77,9 @@
 Découvrir l'application
 </a>
 
-          <a href="#video" class="btn-white">
-              ▶ Voir la démonstration
-          </a>
-
+<a href="#" class="btn-white" id="openVideo">
+    ▶ Voir la démonstration
+</a>
         </div>
 
         <!-- STATS -->
@@ -137,34 +136,7 @@ Découvrir l'application
 
 </div>
 
-<!-- ================= VIDEO DEMO ================= -->
 
-<section class="video-demo" id="video">
-
-    <div class="title">
-
-        <span>DÉMONSTRATION</span>
-
-        <h1>Découvrez AMB Call en action</h1>
-
-        <p>
-            Regardez la démonstration complète de l'application
-            et découvrez comment AMB Call améliore la gestion
-            des urgences médicales en temps réel.
-        </p>
-
-    </div>
-
-    <div class="video-container">
-
-        <video controls width="100%">
-            <source src="{{ url_for('static', filename='videos/AD Amb Call.mp4') }}" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
-
-    </div>
-
-</section>
 <!-- ================= FEATURES ================= -->
 <section class="features" id="features">
 
@@ -634,5 +606,18 @@ Découvrir l'application
 
 </footer>
 <script src="{{ url_for('static', filename='script.js') }}"></script>
+<div id="videoModal" class="video-modal">
+
+    <div class="video-modal-content">
+
+        <span class="close-video">&times;</span>
+
+        <video controls>
+            <source src="{{ url_for('static', filename='videos/AD Amb Call.mp4') }}" type="video/mp4">
+        </video>
+
+    </div>
+
+</div>
 </body>
 </html>

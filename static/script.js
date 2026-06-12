@@ -220,4 +220,22 @@ footerCards.forEach((card,index)=>{
     "0.7s ease";
 
 });
+const openVideo = document.getElementById("openVideo");
+const modal = document.getElementById("videoModal");
+const closeVideo = document.querySelector(".close-video");
+
+openVideo.addEventListener("click", function(e){
+    e.preventDefault();
+    modal.style.display = "block";
+});
+
+closeVideo.addEventListener("click", function(){
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function(e){
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+});
 

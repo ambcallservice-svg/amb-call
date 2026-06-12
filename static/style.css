@@ -2375,3 +2375,13 @@ background:#fff;
     }
 
 }
+.footer-animate{
+    opacity:0;
+    transform:translateY(60px);
+    transition:0.8s ease;
+}
+
+.footer-animate.show{
+    opacity:1;
+    transform:translateY(0);
+}

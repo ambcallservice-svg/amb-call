@@ -220,7 +220,8 @@ if(openVideo && modal){
     });
 
 }
-if(closeVideo){
+
+if(closeVideo && modal){
 
     closeVideo.addEventListener("click", function(){
 
@@ -231,11 +232,14 @@ if(closeVideo){
 }
 
 window.addEventListener("click", function(e){
-    if(e.target === modal){
-        modal.style.display = "none";
-    }
-});
 
+    if(modal && e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+});
 const footerItems =
 document.querySelectorAll(".footer-animate");
 
